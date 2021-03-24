@@ -24,10 +24,12 @@ Après, pour l'antialiasing, au lieu de générer les rayons aléatoirement suiv
 | *Deuxième image 512*512 avec aa.* |
 
 Ensuite, j'ai esayé de changer la variable ambient lighting utilisée pour scaler la couleur lors de l'appel de getColorAt(). 
+ |![Image4](images/ambient_03.png) |
+ |*Ambient light = 0.3.* |
 
-| ![Image3](images/ambient_05.png) | ![Image4](images/ambient_03.png) |
+| ![Image3](images/ambient_05.png) |
 |:--:| 
-| *Ambient light = 0.5.* | *Ambient light = 0.3.* |
+| *Ambient light = 0.5.* |
 
 Après, j'ai tenté de rajouter la correction gamma aux couleurs, ce qui a donné le résultat suivant:
 
