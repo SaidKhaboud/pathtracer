@@ -16,15 +16,16 @@ Ensuite le reste gu traitement étant le même, on a getColorAt qui renvoie la c
 
 | ![Image1](images/first_no_aa.png) | 
 |:--:| 
-| *Première image 512*512 sans aa.* |
+| *Première image 512x512 sans aa.* |
 
 Après, pour l'antialiasing, au lieu de générer les rayons aléatoirement suivant la loi normale, j'ai d'avord crée une variable aadepth qui détermine combien de fois on veut générer des rayons pour l'antialiasing, ensuite je loop deux fois sur cette valeur afin d'utiliser les indices pour générer les rayons directement à partir des points entourant le centre du pixel, une approche simple mais qui a bien amélioré le résultat.
 | ![Image2](images/second_aa.png) | 
 |:--:| 
-| *Deuxième image 512*512 avec aa.* |
+| *Deuxième image 512x512 avec aa.* |
 
 Ensuite, j'ai esayé de changer la variable ambient lighting utilisée pour scaler la couleur lors de l'appel de getColorAt(). 
  |![Image4](images/ambient_03.png) |
+ |:--:|
  |*Ambient light = 0.3.* |
 
 | ![Image3](images/ambient_05.png) |
@@ -35,7 +36,7 @@ Après, j'ai tenté de rajouter la correction gamma aux couleurs, ce qui a donn�
 
 | ![Image5](images/gamma_02.png) | 
 |:--:| 
-| *Image 512*512 avec aa et correction gamma.* |
+| *Image 512x512 avec aa et correction gamma.* |
 
 On remarque donc que la simple modificationde l'ambient lighting permet d'avoir de bon résultats dans un temps d'exécution petit, une vingtaine de secondes.
 Pour les perspectives, on peut rajouter les objets transparents et les sources de lumière étendues, voire même les milieux participants, améliorations parmi d'autres que je n'ai pas encore implémenter à cause des contraintes de temps et mon manque de connaissance en c++.
