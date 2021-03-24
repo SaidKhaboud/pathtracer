@@ -27,6 +27,7 @@ Après, pour l'antialiasing, au lieu de générer les rayons aléatoirement suiv
 Ensuite, j'ai esayé de changer la variable ambient lighting utilisée pour scaler la couleur lors de l'appel de getColorAt(). 
 
 |![Image4](images/ambient_03.png) |
+|:--:|
 |*Ambient light = 0.3.* |
 
 | ![Image3](images/ambient_05.png) | 
